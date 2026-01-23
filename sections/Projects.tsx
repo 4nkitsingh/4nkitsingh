@@ -8,9 +8,9 @@ const projects: Project[] = [
     id: '1',
     title: 'Offensive Security Infographic',
     category: 'Achievement',
-    description: 'Awarded 1-year OffSec subscription for creating an outstanding infographic detailing offensive security methodologies.',
+    description: 'Awarded 1-year OffSec subscription for creating an outstanding infographic detailing offensive security methodologies. Source- https://x.com/offsectraining/status/1779875584501244195',
     tech: ['Design', 'Education', 'Methodology'],
-    image: 'https://picsum.photos/seed/infographic/600/400'
+    image: 'https://pbs.twimg.com/media/GLNjS_XXQAAxLax?format=jpg&name=large'
   },
   {
     id: '2',
@@ -18,7 +18,7 @@ const projects: Project[] = [
     category: 'Research',
     description: 'Exploited 173+ machines across PG Play, PortSwigger, HTB, and TryHackMe. Documented writeups for complex exploit chains.',
     tech: ['Penetration Testing', 'Exploit Dev', 'Linux'],
-    image: 'https://picsum.photos/seed/ctf/600/400'
+    image: 'https://www.hackthebox.com/images/landingv3/og/og-b2c-home.jpg'
   },
   {
     id: '3',
@@ -26,15 +26,15 @@ const projects: Project[] = [
     category: 'Web Security',
     description: 'Developed and secured an investment web application. Implemented robust input validation and secure authentication flows.',
     tech: ['Web Dev', 'Secure Coding', 'PHP/SQL'],
-    image: 'https://picsum.photos/seed/adsflix/600/400'
+    image: 'https://www.koombea.com/wp-content/uploads/2022/01/website-vs-web-application-banner@2x.webp'
   },
   {
     id: '4',
     title: 'DS Security Platform',
     category: 'Contribution',
-    description: 'Contributed to the development of a security training platform, creating challenges and educational content.',
+    description: 'Contributed to the development of a security training platform, creating challenges and educational content. - Source: https://thedssecurity.com/',
     tech: ['Education', 'React', 'Cybersecurity'],
-    image: 'https://picsum.photos/seed/dssec/600/400'
+    image: 'https://ds-security-web.s3.amazonaws.com/ui/media/images/comingsoon.gif'
   }
 ];
 

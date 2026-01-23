@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Linkedin, FileText, Send, Youtube } from 'lucide-react';
+import { Mail, MapPin, Phone, Linkedin, FileText, Send, Youtube, Download } from 'lucide-react';
 
 const Contact: React.FC = () => {
   return (
@@ -49,14 +49,36 @@ const Contact: React.FC = () => {
               </div>
             </div>
 
-            <div className="mt-12 flex flex-wrap gap-4">
-              <a href="#" className="px-6 py-3 bg-[#0077b5]/20 hover:bg-[#0077b5]/40 border border-[#0077b5]/50 rounded-lg text-white font-medium flex items-center gap-2 transition-all hover:scale-105">
+            {/* Resume Download Button (Modern Web3 Style) */}
+            <div className="mt-10">
+                <a href="https://drive.google.com/file/d/1Cneb7Tnh9p8xQf471luxa95HNfzomGNz/view?usp=sharing" download className="group relative w-full sm:w-auto inline-flex items-center justify-between gap-6 px-6 py-4 bg-[#0f141a] border border-cyan-500/30 rounded-xl overflow-hidden hover:border-cyan-400 transition-all duration-300 hover:shadow-[0_0_25px_rgba(34,211,238,0.2)]">
+                   {/* Gradient Hover Effect */}
+                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/10 to-purple-500/10 translate-x-[-100%] group-hover:translate-x-0 transition-transform duration-500" />
+                   
+                   <div className="flex items-center gap-4 relative z-10">
+                      <div className="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                         <Download size={20} className="text-cyan-400" />
+                      </div>
+                      <div className="flex flex-col text-left">
+                         <span className="text-xs text-gray-500 font-mono uppercase tracking-wider group-hover:text-cyan-400/80 transition-colors">Professional CV</span>
+                         <span className="text-lg font-bold text-white group-hover:text-cyan-100 transition-colors">Download Resume</span>
+                      </div>
+                   </div>
+
+                   <div className="relative z-10 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 hidden sm:block">
+                      <div className="w-2 h-2 rounded-full bg-cyan-400 shadow-[0_0_10px_rgba(34,211,238,1)] animate-pulse" />
+                   </div>
+                </a>
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <a href="https://www.linkedin.com/in/4nkitsingh" className="px-6 py-3 bg-[#0077b5]/20 hover:bg-[#0077b5]/40 border border-[#0077b5]/50 rounded-lg text-white font-medium flex items-center gap-2 transition-all hover:scale-105">
                 <Linkedin size={20} /> LinkedIn
               </a>
-              <a href="#" className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-white font-medium flex items-center gap-2 transition-all hover:scale-105">
+              <a href="https://4nkit.medium.com/" className="px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-lg text-white font-medium flex items-center gap-2 transition-all hover:scale-105">
                 <FileText size={20} /> Medium
               </a>
-              <a href="#" className="px-6 py-3 bg-red-600/20 hover:bg-red-600/40 border border-red-500/50 rounded-lg text-white font-medium flex items-center gap-2 transition-all hover:scale-105">
+              <a href="https://www.youtube.com/@astech.4u" className="px-6 py-3 bg-red-600/20 hover:bg-red-600/40 border border-red-500/50 rounded-lg text-white font-medium flex items-center gap-2 transition-all hover:scale-105">
                 <Youtube size={20} /> YouTube
               </a>
             </div>

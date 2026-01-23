@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
              <Shield className="text-cyan-400" size={20} />
           </div>
           <span className="font-space-grotesk font-bold text-xl tracking-tight">
-            ANKIT<span className="text-cyan-400">.SEC</span>
+            4nkitsingh<span className="text-cyan-400">: an Ethical Hacker</span>
           </span>
         </a>
 

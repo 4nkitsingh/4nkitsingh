@@ -16,6 +16,7 @@ const Navbar: React.FC = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Blog', href: 'https://4nkit.medium.com/', external: true },
     { name: 'Contact', href: '#contact' },
   ];
 
@@ -34,7 +35,7 @@ const Navbar: React.FC = () => {
              <Shield className="text-cyan-400" size={20} />
           </div>
           <span className="font-space-grotesk font-bold text-xl tracking-tight">
-            4nkitsingh<span className="text-cyan-400">: an Ethical Hacker</span>
+            ANKIT<span className="text-cyan-400">.SEC</span>
           </span>
         </a>
 
@@ -43,7 +44,9 @@ const Navbar: React.FC = () => {
           {navLinks.map((link) => (
             <a 
               key={link.name} 
-              href={link.href} 
+              href={link.href}
+              target={link.external ? "_blank" : "_self"}
+              rel={link.external ? "noopener noreferrer" : ""}
               className="text-sm font-medium text-gray-300 hover:text-white hover:text-cyan-400 transition-colors relative group"
             >
               {link.name}
@@ -52,7 +55,7 @@ const Navbar: React.FC = () => {
           ))}
           <a 
             href="#contact"
-            className="px-5 py-2 bg-white/5 hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/50 rounded text-sm font-medium transition-all text-white hover:text-cyan-300"
+            className="px-5 py-2 bg-white/5 hover:bg-cyan-500/10 border border-white/10 hover:border-cyan-500/50 rounded text-sm font-medium transition-all text-white hover:text-cyan-300 hover:shadow-[0_0_15px_rgba(6,182,212,0.3)]"
           >
             Hire Me
           </a>
@@ -79,6 +82,8 @@ const Navbar: React.FC = () => {
                 <a 
                   key={link.name} 
                   href={link.href}
+                  target={link.external ? "_blank" : "_self"}
+                  rel={link.external ? "noopener noreferrer" : ""}
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="text-gray-300 hover:text-cyan-400 py-2 block"
                 >

@@ -15,7 +15,7 @@ const certs = [
         hoverText: "hover:text-red-300",
         shadow: "shadow-[0_0_30px_rgba(239,68,68,0.3)]"
     },
-    link: "#"
+    link: "https://www.credential.net/d757f388-15c9-4012-a629-6db3653acb9f?trk=public_profile_see-credential#gs.b47ksl"
   },
   {
     name: "CEH",
@@ -29,11 +29,11 @@ const certs = [
         hoverText: "hover:text-blue-300",
         shadow: "shadow-[0_0_30px_rgba(59,130,246,0.3)]"
     },
-    link: "#"
+    link: "https://aspen.eccouncil.org/VerifyBadge?type=certification&a=uvwonILVn01xFzNW+WgQxw4OSG25XOi5MiJ9WCMSVr0=&trk=public_profile_see-credential"
   },
   {
     name: "CSE",
-    title: "Cyber Security Expert",
+    title: "Cyber Security Expert - Simplilearn",
     date: "August 2023",
     styles: {
         glow: "bg-purple-500/20",
@@ -43,7 +43,7 @@ const certs = [
         hoverText: "hover:text-purple-300",
         shadow: "shadow-[0_0_30px_rgba(168,85,247,0.3)]"
     },
-    link: "#"
+    link: "https://success.simplilearn.com/6974fb77-5f7a-45e3-be6a-df0f69e1934b?trk=public_profile_see-credential"
   }
 ];
 

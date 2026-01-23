@@ -84,7 +84,7 @@ const Hero: React.FC = () => {
                     Example: src="/ankit-photo.jpg" 
                  */}
                  <img 
-                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=800&q=80" 
+                   src="https://media.licdn.com/dms/image/v2/D4D03AQFXnFb2pffE_Q/profile-displayphoto-crop_800_800/B4DZsUj_w2HwAI-/0/1765576540690?e=1770854400&v=beta&t=vVNFpfS1OyacAdAmVKpics4Z8Yt7h1dFHQUdMiR6B7g" 
                    alt="Ankit Singh" 
                    className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500"
                  />
